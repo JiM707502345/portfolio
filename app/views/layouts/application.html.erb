@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JiM's Portfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="スギジンのホームページ">
+    <!--css--->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="jim707502345.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../IMG_6632.PNG">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div id="home" class="big-bg">
+      <header calss="page-header wrapper">
+        <h1 class="main-title">JiM<p class="s">Engineering of Promise</p></h1>
+          <ul class="main-nav">
+            <li class="x"><a href="index.html">TOP</a><li>
+            <li><a href="jim.html">JiM</a><li>
+            <li><a href="project.html">PROJECTS</a><li>
+            <li class="y"><a href="blog.html">BLOG</a></li>
+      </header>
+    <%= yield %>
+    <footer>
+        <div class="wrapper">
+          <p><small>&copy; JiM Engineering of Promise</small></p>
+        </div>
+    </footer>
+  </body>
+</html>
